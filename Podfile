@@ -7,7 +7,8 @@ target 'Versi' do
 
   # Pods for Versi
 
-
+     pod 'Alamofire', '4.8.0'
+     pod 'AlamofireImage', '3.5'
      pod 'RxSwift', '~> 4.2'
      pod 'RxCocoa', '~> 4.2'
 
