@@ -10,6 +10,9 @@
 		2421FAEA841465396ABD8386 /* Pods_Versi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849608AF6973097889C5DAD /* Pods_Versi.framework */; };
 		4E728193229BE58300DB60BC /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E728192229BE58300DB60BC /* RoundedBorderButton.swift */; };
 		4E728195229BE85500DB60BC /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E728194229BE85500DB60BC /* Repo.swift */; };
+		4E728197229BE94200DB60BC /* TrendingRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E728196229BE94200DB60BC /* TrendingRepoCell.swift */; };
+		4E72819B229BEDE400DB60BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72819A229BEDE400DB60BC /* Constants.swift */; };
+		4E72819D229BEE6200DB60BC /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72819C229BEE6200DB60BC /* DownloadService.swift */; };
 		4E9899DF2298381A00F63853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9899DE2298381A00F63853 /* AppDelegate.swift */; };
 		4E9899E12298381A00F63853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9899E02298381A00F63853 /* ViewController.swift */; };
 		4E9899E42298381A00F63853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9899E22298381A00F63853 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		4E728192229BE58300DB60BC /* RoundedBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		4E728194229BE85500DB60BC /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		4E728196229BE94200DB60BC /* TrendingRepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingRepoCell.swift; sourceTree = "<group>"; };
+		4E72819A229BEDE400DB60BC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E72819C229BEE6200DB60BC /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		4E9899DB2298381A00F63853 /* Versi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9899DE2298381A00F63853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9899E02298381A00F63853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E728198229BED6200DB60BC /* service */ = {
+			isa = PBXGroup;
+			children = (
+				4E72819C229BEE6200DB60BC /* DownloadService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		4E728199229BEDB200DB60BC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E72819A229BEDE400DB60BC /* Constants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		4E9899D22298381A00F63853 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +93,8 @@
 		4E9899DD2298381A00F63853 /* Versi */ = {
 			isa = PBXGroup;
 			children = (
+				4E728199229BEDB200DB60BC /* utils */,
+				4E728198229BED6200DB60BC /* service */,
 				4ED0414B229BD4A800144F9B /* model */,
 				4ED0414A229BD4A200144F9B /* view */,
 				4ED04149229BD49300144F9B /* controller */,
@@ -96,6 +120,7 @@
 		4ED0414A229BD4A200144F9B /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4E728196229BE94200DB60BC /* TrendingRepoCell.swift */,
 				4E728192229BE58300DB60BC /* RoundedBorderButton.swift */,
 				4ED04150229BD52500144F9B /* RoundedBorderTextField.swift */,
 			);
@@ -244,11 +269,14 @@
 			files = (
 				4E728195229BE85500DB60BC /* Repo.swift in Sources */,
 				4ED0414F229BD4E500144F9B /* SearchVC.swift in Sources */,
+				4E728197229BE94200DB60BC /* TrendingRepoCell.swift in Sources */,
 				4ED04151229BD52500144F9B /* RoundedBorderTextField.swift in Sources */,
 				4E9899E12298381A00F63853 /* ViewController.swift in Sources */,
+				4E72819D229BEE6200DB60BC /* DownloadService.swift in Sources */,
 				4E728193229BE58300DB60BC /* RoundedBorderButton.swift in Sources */,
 				4E9899DF2298381A00F63853 /* AppDelegate.swift in Sources */,
 				4ED0414E229BD4E500144F9B /* TrendingFeedVC.swift in Sources */,
+				4E72819B229BEDE400DB60BC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
